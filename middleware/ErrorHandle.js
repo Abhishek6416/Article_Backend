@@ -1,4 +1,4 @@
-const CreateError = (message, statusCode, errorFound) => {
+const CreateError = async(message, statusCode, errorFound) => {
     const err = new Error(message);
     err.statusCode = statusCode;
     err.errorFound = errorFound;
